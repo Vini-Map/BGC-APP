@@ -39,7 +39,7 @@ nav{
     background-color: var(--green-color);
 }
 header .logo {
-    font-size: 36px;
+    font-size: 32px;
     color: var(--green-color);
     font-weight: bold; 
 }
@@ -76,6 +76,7 @@ header nav ul li a:hover{
 
 
 /*Inicio Index*/
+
 .linha2{
     background-color: #000000;
     width: 100%;
@@ -436,7 +437,7 @@ display: grid;
 
    @media only screen and (max-width: 900px) {
     header {
-        padding: 0 30px;
+        padding: 0 15px;
     }
 }
 
@@ -444,6 +445,16 @@ display: grid;
     .mobile-nav {
         display: block;
     }
+    .logo a {
+        display: none; 
+    }
+
+    .logo::after{
+        content: "BGC";
+        display: block; 
+        
+    }
+
     header nav {
         position: absolute;
         width: 100%;
@@ -505,6 +516,9 @@ display: grid;
 @media only screen and (max-width: 648px) {
     .overlay-text {
         font-size: 30px;
+    }
+    .titulo-index{
+        font-size: 26px;
     }
 
     .text1 {
